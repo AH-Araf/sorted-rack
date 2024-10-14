@@ -1,0 +1,82 @@
+.ticket-container {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ticket-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+}
+
+.scrollable-container {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.ticket-card h4 {
+    margin: 0 0 10px 0;
+}
+
+.ticket-card p {
+    margin: 5px 0;
+}
+
+.ticket-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ticket-card button:hover {
+    background-color: #0056b3;
+}
+
+.ticket-box-hover:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.comment {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.card {
+    margin: 20px 0;
+}
+
+.view-full-card-half {
+    width: 400px;
+}
+
+.custom-modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-backdrop.show {
+    opacity: 0.5;
+    background-color: black;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translate(0, 0);
+    opacity: 1;
+}
